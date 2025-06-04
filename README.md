@@ -39,20 +39,13 @@ __Para executar o projeto, você precisa de:__
 
 __Clone este repositório para sua máquina local:__
 ```
-git clone https://github.com/Layxsk/Cobrinha.git
+git clone "link do repositório"
 cd Cobrinha
 ``` 
-2. Configurar o Ambiente 💻
 
-__Certifique-se de que os arquivos index.html, estilos.css e script.js estão na mesma pasta. O projeto depende de recursos externos:__
+2. Executar o jogo 🎯
 
-* **Font Awesome**: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css
-
-* **Google Fonts (Open Sans)**: https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap
-
-3. Executar o jogo 🎯
-
-__Você não pode abrir o index.html diretamente no navegador (usando file://), pois isso pode causar erros de carregamento. Use um servidor local:__
+__Você não pode abrir o index.html diretamente no navegador, pois isso pode causar erros de carregamento. Use um servidor local:__
 
 * **Instale o Node.js (se ainda não tiver).**
 ``` 
