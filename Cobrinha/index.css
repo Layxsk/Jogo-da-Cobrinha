@@ -52,6 +52,23 @@ body {
   background: #05a500;
 }
 
+.botao-reiniciar {
+  margin: 15px auto;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #f3eef3;
+  background: #372134;
+  border: 1px solid #2e192d;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.botao-reiniciar:hover {
+  background: #94598c;
+}
+
 .controles {
   display: none;
   justify-content: space-between;

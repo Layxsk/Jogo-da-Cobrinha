@@ -2,6 +2,7 @@ const tabuleiro = document.querySelector(".tabuleiro");
 const elementoPontuacao = document.querySelector(".pontuacao");
 const elementoRecorde = document.querySelector(".recorde");
 const botoesControle = document.querySelectorAll(".controles i");
+const botaoReiniciar = document.querySelector(".botao-reiniciar");
 
 let fimDeJogo = false;
 let comidaX, comidaY;
@@ -19,11 +20,27 @@ const atualizarPosicaoComida = () => {
     comidaY = Math.floor(Math.random() * 30) + 1;
 };
 
+const reiniciarJogo = () => {
+    fimDeJogo = false;
+    cobraX = 5;
+    cobraY = 5;
+    direcaoX = 0;
+    direcaoY = 0;
+    corpoCobra = [];
+    pontuacao = 0;
+    elementoPontuacao.innerText = `Pontuação: ${pontuacao}`;
+    botaoReiniciar.style.display = "none";
+    clearInterval(idIntervalo);
+    atualizarPosicaoComida();
+    idIntervalo = setInterval(iniciarJogo, 100);
+};
+
 const finalizarJogo = () => {
     clearInterval(idIntervalo);
-    alert("Fim de Jogo! Clique em OK para jogar novamente...");
-    location.reload();
+    botaoReiniciar.style.display = "block";
 };
+
+botaoReiniciar.addEventListener("click", reiniciarJogo);
 
 const alterarDirecao = (evento) => {
     if (evento.key === "ArrowUp" && direcaoY !== 1) {
@@ -50,7 +67,7 @@ const iniciarJogo = () => {
     if (cobraX === comidaX && cobraY === comidaY) {
         atualizarPosicaoComida();
         corpoCobra.push([comidaY, comidaX]); 
-        pontuacao++; 
+        pontuacao++;
         recorde = pontuacao >= recorde ? pontuacao : recorde;
         localStorage.setItem("recorde", recorde);
         elementoPontuacao.innerText = `Pontuação: ${pontuacao}`;
