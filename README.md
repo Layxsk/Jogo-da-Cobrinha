@@ -66,7 +66,7 @@ cd jogo-da-cobrinha
 http-server
 ``` 
 
-* Acesse http://localhost:8080 no seu navegador. Ou um dos IPs disponibilizados no terminal.
+* Acesse http://192.168.56.1:8080/ no seu navegador. Ou um dos IPs disponibilizados no terminal.
 
 ## O jogo 🎮
 
