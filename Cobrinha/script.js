@@ -96,5 +96,5 @@ const iniciarJogo = () => {
 };
 
 atualizarPosicaoComida();
-idIntervalo = setInterval(iniciarJogo, 100);
+idIntervalo = setInterval(iniciarJogo, 120);
 document.addEventListener("keyup", alterarDirecao);
