@@ -63,10 +63,10 @@ npm install -g http-server
 
 ``` 
 cd jogo-da-cobrinha
-http-server
+npx server
 ``` 
 
-* Acesse http://192.168.56.1:8080/ no seu navegador. Ou um dos IPs disponibilizados no terminal.
+* Aceite a instalação e acesse um dos IPs disponibilizados no terminal.
 
 ## O jogo 🎮
 
