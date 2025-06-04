@@ -24,7 +24,7 @@ body {
   overflow: hidden;
   border-radius: 5px;
   background: #3b2947;
-  box-shadow: 0 20px 40px rgb(151, 28, 131);
+  box-shadow: 0 20px 20px rgba(192, 57, 170, 0.589);
 }
 
 .info-jogo {
@@ -40,7 +40,7 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  background: #3b2947;
+  background: #c3a2d8;
   grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 
